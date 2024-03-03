@@ -16,7 +16,7 @@ export default function App() {
     const [booksLoading, setBooksLoading] = useState(true);
 
     const getAllBooks = async () => {
-        await axios.get("http://node41091-noderest.proen.app.ruk-com.cloud/books")
+        await axios.get("https://node41091-noderest.proen.app.ruk-com.cloud/books")
             .then((resp) => {
                 void setBooks(resp.data);
                 void setBooksLoading(false);
