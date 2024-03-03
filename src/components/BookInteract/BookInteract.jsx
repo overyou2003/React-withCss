@@ -29,7 +29,7 @@ function BookInteract({ book, mode }) {
     }
 
     const update = async (id) => {
-        await axios.put(`http://node41091-noderest.proen.app.ruk-com.cloud/books/${id}`, payload)
+        await axios.put(`https://node41091-noderest.proen.app.ruk-com.cloud/books/${id}`, payload)
             .then((resp) => {
                 if (resp.status == 200) {
                     window.location.reload();
@@ -43,7 +43,7 @@ function BookInteract({ book, mode }) {
     }
 
     const add = async () => {
-        await axios.post('http://node41091-noderest.proen.app.ruk-com.cloud/books', payload)
+        await axios.post('https://node41091-noderest.proen.app.ruk-com.cloud/books', payload)
             .then((resp) => {
                 if (resp.status == 200) {
                     window.location.reload();
