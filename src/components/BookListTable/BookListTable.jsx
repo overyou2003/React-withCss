@@ -42,9 +42,11 @@ function BookListTable({ books }) {
                 </div>
                 <table className="table__styled">
                     <thead className="thead__styled">
-                        <th>Title</th>
-                        <th>Author</th>
-                        <th>Actions</th>
+                        <tr>
+                            <th>Title</th>
+                            <th>Author</th>
+                            <th>Actions</th>
+                        </tr>
                     </thead>
                     <tbody>
                         {books.map((book) => {

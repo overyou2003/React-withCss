@@ -129,7 +129,7 @@ function BookInteract({ book, mode }) {
 }
 
 BookInteract.propTypes = {
-    book: PropTypes.object.isRequired,
+    book: PropTypes.object,
     mode: PropTypes.string.isRequired
 };
 
