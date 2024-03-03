@@ -1,0 +1,6 @@
+.button__styled {
+    width: 80px;
+    padding: 8px 0;
+    font-weight: 600;
+    cursor: pointer;
+}

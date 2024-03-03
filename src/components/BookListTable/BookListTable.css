@@ -1,0 +1,19 @@
+.table__styled {
+    margin-top: 1rem;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table__styled td, .table__styled th {
+    border: 1px solid rgb(63, 63, 63);
+    padding: 8px;
+}
+
+.table__styled tr:nth-child(even){background-color: #2c2c2c;}
+
+.table__styled th {
+    padding: 6px 6px;
+    text-align: left;
+    background-color: #f77100;
+    color: #ffffff;
+}
