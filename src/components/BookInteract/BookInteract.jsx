@@ -11,7 +11,12 @@ import Input from "../Input/Input";
 
 function BookInteract({ book, mode }) {
     const [opened, setOpened] = useState(false);
-    const [payload, setPayload] = useState({ title: "", author: "" });
+    const [payload, setPayload] = useState(
+        {
+            title: book !== undefined ? book.title : "",
+            author: book !== undefined ? book.author : ""
+        }
+    );
 
     const action = () => {
         if (opened) {
